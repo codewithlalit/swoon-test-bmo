@@ -2,6 +2,10 @@
   "name": "book-searching-tool",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.13.x",
+    "npm": "8.1.x"
+  },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
