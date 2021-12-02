@@ -6,7 +6,7 @@ import SearchBar from "./components/SearchBar";
 import ResultsPage from "./components/ResultsPage";
 
 //API urls
-const baseUrl = "http://openlibrary.org/search.json?q=";
+const baseUrl = "https://openlibrary.org/search.json?q=";
 
 function App() {
   //All the required states.
