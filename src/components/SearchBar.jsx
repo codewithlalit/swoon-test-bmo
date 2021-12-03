@@ -3,15 +3,18 @@ import { useState } from "react";
 const SearchBar = ({ fetchBooks }) => {
   const [title, setTitle] = useState("");
 
-
   const handleSubmit = (e) => {
+    if (title.length !== 0) {
+      fetchBooks(title);
+    } else {
+      alert("Please enter the title.");
+    }
     e.preventDefault();
-    fetchBooks(title);
   };
 
   return (
     <div>
-      <form action='#' onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type='text'
           value={title}

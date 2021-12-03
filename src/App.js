@@ -15,20 +15,16 @@ function App() {
   const [order, setOrder] = useState(true);
 
   // API call to fetch the search results for keywords.
-  const fetchBooks = useCallback(
-    async (title) => {
-      setLoader(true);
+  const fetchBooks = useCallback(async (title) => {
+    setLoader(true);
 
-      const res = await fetch(baseUrl + title);
-      const data = await res.json();
+    const res = await fetch(baseUrl + title);
+    const data = await res.json();
 
-      const searchResults = await data.docs;
-      setBooks(searchResults);
-      console.log(books);
-      setLoader(false);
-    },
-    [books]
-  );
+    const searchResults = await data.docs;
+    setBooks(searchResults);
+    setLoader(false);
+  }, []);
   // Function to sort the Books array alphabetically(Title).
   const handleTitleSort = useCallback(() => {
     let newSort = books.sort(function (a, b) {

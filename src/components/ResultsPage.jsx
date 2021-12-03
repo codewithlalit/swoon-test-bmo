@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Book from "./Book";
 
 const ResultsPage = ({ books, loader, handleTitleSort, handleDateSort }) => {
-  console.log("results rendered");
   return loader ? (
     <h5>Loading ....</h5>
   ) : (

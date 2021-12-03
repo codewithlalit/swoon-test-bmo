@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="card"
+>
+  <h5 />
+  <h6>
+    Author: 
+  </h6>
+  <img
+    alt="book"
+    src="https://covers.openlibrary.org/b/isbn/undefined-M.jpg"
+  />
+  <p>
+    Publish date: 
+  </p>
+</div>
+`;
